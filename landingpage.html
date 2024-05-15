@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Banner page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        section.banner_section {
+            background: #000;
+            height: 100vh;
+            position: relative;
+        }
+        .banner_logo {
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .right_banner_text ul li {
+            font-size: 28px;
+            color: #fff;
+            line-height: normal;
+        }
+        .right_banner_text ul {
+            list-style-type: '- ';
+        }
+        .right_banner_text {
+            padding-left: 100px;
+        }
+        .outer_banner {
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .banner_logo img {
+            margin: 0 auto;
+        }
+        .left_banner_text {
+            text-align: center;
+        }
+        .left_banner_text span {
+            font-size: 52px;
+            color: #fff;
+            font-family: "Dancing Script", cursive;
+            line-height: 1.2;
+        }
+        .left_banner_text {
+            text-align: center;
+        }
+        .banner_content {
+            display: flex;
+            align-items: center;
+        }
+        @media(max-width:991px){
+            .left_banner_text {
+                padding-bottom: 50px;
+            }
+            .right_banner_text {
+                padding-left: 0;
+            }
+            .outer_banner {
+                position: inherit;
+            }
+            .banner_content {
+                display: inherit;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="banner_section">
+        <div class="outer_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_logo">
+                            <img src="rapifly.png" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="row banner_content">
+                    <div class="col-md-6">
+                        <div class="left_banner_text">
+                            <span>Community<br> Project Management</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right_banner_text">
+                            <ul>
+                                <li>Collective Planning</li>
+                                <li>Challenge Management</li>
+                                <li>Change Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
